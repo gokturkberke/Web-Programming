@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <form>
+        <p>
+            Ad : <input type="text" name="ad">
+        </p>
+        <p>
+            Soyad : <input type="text" name="soyad">
+        </p>
+
+        <p>
+            Eposta : <input type="email" name="email">
+        </p>
+
+        <p>
+            Parola : <input type="password" name="password">
+        </p>
+
+        <p>
+            Parolayi Hatirla : <input type="checkbox" name="hatirla">
+        </p>
+        <p>
+            Cinsiyetiniz : <br>
+            Erkek <input type="radio" name="cinsiyet">
+            Kadin <input type="radio" name="cinsiyet">
+            <!-- name cinsiyet yapiyoruz cunku yapmazsak iki butona da ayni anda tiklanilabiliyo-->
+        </p>
+
+        <p>
+            Hobileriniz : <br>
+            Kitap Okumak<input type="checkbox" name="hobi">
+            Film Izlemek<input type="checkbox" name="hobi">
+            Spor Yapmak<input type="checkbox" name="hobi">
+        </p>
+        <p>
+            Dogum yeriniz : <br>
+            <select  name="dogumyeri">
+                <option>Eskisehir</option>
+                <option>istanbul</option>
+                <option>izmir</option>
+            </select>
+        </p>
+        <p>
+            Dogum yeriniz : <br>
+            <select  multiple name="dogumyeri">
+                <option>Eskisehir</option>
+                <option>istanbul</option>
+                <option>izmir</option>
+            </select>
+        </p>
+        <!-- multiple yaparsak birden fazla secim yapilabilir -->
+    </form>
+
+</body>
+
+</html>
