@@ -1,0 +1,90 @@
+/* p {
+    color: red;
+
+}
+/* (P) TUM P ETIKETLERI 
+div p {
+    color: red;
+}
+/* div p icersiindeki tum p etiketleri 
+div,p{
+    color: red;
+}
+/* tüm div ve p etiketleri 
+p + div {
+    color: red;
+}
+/* p etiketinden sonra gelen div etiketleri 
+.container {
+    color: royalblue;
+}
+/* tum containerlar
+.container div{
+    color: royalblue;
+}
+container icindeki tum divler 
+.container div p {
+    color: royalblue;
+}
+container icindeki tum divler icindeki tum p etiketleri */
+/* ----------------------------------------------------------------- */
+/* h2[title="baslik1"] { 
+    color: red;
+}
+p[title="paragraf1"] {
+    color: lightblue;
+    text-align:justify;
+}
+a[target="_blank"] {
+    color: green;
+}
+ input[type="text"]{
+    background-color: purple;
+ }*/
+/* ----------------------------------------------------------------- */
+/* Pseudo Element */
+p::first-line {
+    font-weight: bold;
+    color: darkred;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    /* paragrafin ilk satiri bold olur kelimeler arasi 2px letterspacing 1px */
+
+}
+
+p::first-letter {
+    font-size: 50px;
+}
+
+/* Pseudo Classes */
+ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+ul li:first-child {
+    background-color: darkseagreen;
+
+}
+
+ul li:last-child {
+    background-color: violet;
+}
+a:visited{
+    color:fuchsia;
+}
+/* Ziyaret edilen pembe rengine doner */
+a:hover{
+    color:darkorange;
+    background-color: deepskyblue;
+}
+/* Uzerine gelince turuncu olur  arka plan mavi olur*/
+
+a{
+    padding:5px 10px;  /*  ust alt 5px sag sol 10px*/
+    text-decoration: none;  /* cizgiyi metnin altindaki kaldirir */
+    display:block; /* linklerin yan yana degil alt alta olmasini saglar */
+    margin-bottom: 10px; 
+    width: 100px; 
+}
