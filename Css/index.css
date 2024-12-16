@@ -11,10 +11,14 @@ div,p{
     color: red;
 }
 /* tüm div ve p etiketleri 
-p + div {
+div + p {
     color: red;
+    <div>Bu bir div.</div>
+    <p>Bu paragraf seçilir.</p>
+    <div>Bu başka bir div.</div>
+    <p>Bu paragraf seçilmez.</p>
 }
-/* p etiketinden sonra gelen div etiketleri 
+/* div etiketinden sonra gelen p etiketleri 
 .container {
     color: royalblue;
 }
