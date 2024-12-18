@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+        div {
+            width: 250px;
+            height: 100px;
+            color: lightblue;
+            margin: 10px;
+            display:inline-block; /*sayfa yeterliyse yan yana yeterli degilse boyutu asagi ustlu koyar kutulari*/
+        }
+        a{
+            display:block;  /* Linklerin alt alta olmasini saglar (default hali inline yanyana)*/
+        }
+        span{
+            display:block;
+        }
+        /* display none sayfada gizler */
+    </style>
+</head>
+
+<body>
+
+    <div id="kutu1">Kutu 1</div>
+    <div id="kutu2">Kutu 2</div>
+
+    <a href="">Link 1</a>
+    <a href="">Link2 </a>
+    <a href="">Link 3</a>
+
+    <br><br>
+
+    <span>Lorem ipsum dolor sit amet consectetur.</span>
+    <span>Lorem ipsum dolor sit amet consectetur.</span>
+    <span>Lorem ipsum dolor sit amet consectetur.</span>
+
+
+
+</body>
+
+</html>
