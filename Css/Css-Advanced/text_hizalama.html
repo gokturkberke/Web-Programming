@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Hizalama</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            width: 900px;
+            margin: 40px auto;
+        }
+
+        p#paragraf1 {
+            text-align: right;
+        }
+
+        p#paragraf2 {
+            text-align: center;
+        }
+
+        p#paragraf3 {
+            text-align: left;
+            border: 2px solid brown;
+            padding: 10px;
+
+            column-count: 2;
+            /* Paragrafı iki sütuna böler */
+
+            column-rule: 2px solid red;
+            /* Sütunlar arasına çizgi ekler */
+        }
+        p#paragraf4 {
+            text-align: justify; 
+            /* Paragrafı iki kenara yaslar cok kullanilir */
+            text-indent: 15px; 
+            /* Paragrafın ilk satırını girinti yapar (satir basligi gibi) */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+
+    <p id="paragraf1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae commodi quae minima, sequi fugit,
+        numquam nisi,
+        veniam alias ea ex explicabo! Et quas id optio quam tenetur doloribus eaque iusto!</p>
+    <p id="paragraf2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit qui veniam alias,
+        provident ea
+        asperiores fugiat quaerat dolor assumenda voluptatem nemo quos voluptates voluptas, enim architecto eius
+        officiis! Nam?</p>
+    <p id="paragraf3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil maiores amet facilis assumenda
+        pariatur nam
+        sapiente itaque. Nulla numquam cumque iste ut, voluptatum, beatae officiis quam quaerat enim quibusdam
+        similique.</p>
+    <p id="paragraf4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi omnis eius nulla fuga ipsum minima suscipit
+        animi, vitae accusamus eligendi alias voluptatibus in similique quod repudiandae sint ratione voluptatum magni?
+    </p>
+</body>
+
+</html>
