@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+
+    <style>
+        body {
+            /* margin: 0;  Sayfa da herhangi bir bosluk birakmayiz( default oluyo)*/
+            margin: 20px;
+        }
+
+        .kutu {
+            width: 150px;
+            height: 150px;
+            float: left;
+            /* kutulari yan yana getirir */
+            /* margin-right: 10px;  her kutunun sagindan 10 px */
+
+        }
+
+        #kutu1 {
+            background-color: lightpink;
+            /* margin: 10px; kutu1 in etrafinda 10px bosluk birakir */
+            margin: 50px 100px 50px 20px;
+            /* 50px yukaridan 100px sagdan 50px asagidan 20px soldan bosluk birakir */
+            /*margin:200px 50px;  200px yukaridan asagiya 50px soldan saga bosluk birakir */
+        }
+
+        #kutu2 {
+            background-color: lightseagreen;
+            margin: auto;
+            /* kutuyu sayfanin ortasina getirir(genisletsek de otomatik gecer ortaya) */
+
+        }
+
+        #kutu3 {
+            background-color: lightsteelblue;
+
+        }
+        span{
+            margin: 50px;
+            background: lightgreen;
+            display: inline-block; 
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="kutu" id="kutu1">Kutu 1 </div>
+    <div class="kutu" id="kutu2">Kutu 2</div>
+    <div class="kutu" id="kutu3">Kutu 3</div>
+
+
+    <span>1</span><span>2</span><span>3</span><span>4</span>
+
+
+
+    </div>
+
+</body>
+
+</html>

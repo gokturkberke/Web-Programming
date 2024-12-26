@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Images</title>
+    <style>
+        img {
+            width: 300px;
+            float:right;
+            margin-left:20px;  /* Resim ile yazilar arasinda 20px bosluk birakir */
+        }
+        /* float right resmi saga yapistirir yazilar da otomatik sola  */
+        .bolum{
+            border:1px solid red;
+            overflow: auto; 
+            padding:10px;
+            background-color: aquamarine;
+        }
+        /* overflow auto taşan yazilarin resmin altinda olmasini saglar */
+    </style>
+</head>
+
+<body>
+
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quia itaque? Doloribus, quisquam. Error
+        libero totam laborum rem at asperiores a beatae nisi aperiam! Laborum ratione dolorum quam nulla quasi!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi magni delectus laborum iusto veritatis a
+        perferendis molestias consequuntur tenetur minus, doloremque, quaerat voluptates reprehenderit, natus ducimus?
+        Unde voluptatum culpa labore.</p>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quia itaque? Doloribus, quisquam. Error
+        libero totam laborum rem at asperiores a beatae nisi aperiam! Laborum ratione dolorum quam nulla quasi!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi magni delectus laborum iusto veritatis a
+        perferendis molestias consequuntur tenetur minus, doloremque, quaerat voluptates reprehenderit, natus ducimus?
+        Unde voluptatum culpa labore.</p>
+    <div class = "bolum">
+        <img src="../Html/5.jpg" alt="Floating Image">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione neque veniam sapiente error at cum ex
+        impedit aperiam doloribus, temporibus a. Ipsum fugiat eum dolore adipisci consequuntur consequatur facilis?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore assumenda ex soluta ipsa molestias odio
+        possimus
+        nihil ut recusandae atque explicabo mollitia, libero adipisci repellendus facilis dolores voluptate in officia.
+    </div>
+</body>
+
+</html>

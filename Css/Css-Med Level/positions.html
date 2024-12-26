@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+
+    <style>
+        .kutu {
+            width: 150px;
+            height: 150px;
+        }
+
+        #kutu1 {
+            background-color: lightpink;
+            position: fixed;
+            /* Sayfanin herhangi bir kosesine cogu zaman yapistirmak icin kullanilir
+     scroll ozelligi ile insek bile kutuyu hala gorebiliriz sag altta (kutu2,kutu3 kaybolur)*/
+            bottom: 0;
+            right: 0;
+            
+        }
+
+        #kutu2 {
+            background-color: lightseagreen;
+            position: absolute;
+            /* Sayfanin baslangic noktasindan bosluk birakir */
+            top: 50px;
+            left: 50px;
+            width: 100%;
+            /* position: sticky dersek sayfayi asagiya kaydirsak bile kalir kaybolmadan */
+        }
+
+        #kutu3 {
+            background-color: lightsteelblue;
+            position: relative;
+            /* Kutunun baslangic noktasindan bosluk birakir  */
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, odit? Ratione, quia? Ipsum, adipisci facilis? Iure
+        id cupiditate ratione, natus, animi quae aut distinctio libero at a fugit itaque veniam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ducimus molestias fugiat ratione natus dolores!
+        Necessitatibus accusamus culpa recusandae sit nobis ab beatae praesentium veritatis esse voluptatibus, expedita
+        soluta blanditiis!</p>
+    <div class="kutu" id="kutu1">Kutu 1 </div>
+    <div class="kutu" id="kutu2">Kutu 2</div>
+    <div class="kutu" id="kutu3">Kutu 3</div>
+    <div style="height:3000px;">
+
+
+    </div>
+
+</body>
+
+</html>
