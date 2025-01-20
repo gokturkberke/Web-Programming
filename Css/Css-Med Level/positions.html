@@ -24,7 +24,9 @@
 
         #kutu2 {
             background-color: lightseagreen;
-            position: absolute;
+            position: absolute; 
+             /* absolute kullanıldığında, element en yakın position: relative, position: absolute, veya position: fixed değerine sahip olan üst elemente (container) göre konumlanır.
+              Eğer böyle bir üst element yoksa, element doğrudan body'e gore konumlanior */
             /* Sayfanin baslangic noktasindan bosluk birakir */
             top: 50px;
             left: 50px;
@@ -35,6 +37,7 @@
         #kutu3 {
             background-color: lightsteelblue;
             position: relative;
+            /* element kendisine ait normal konumunu referans alir */
             /* Kutunun baslangic noktasindan bosluk birakir  */
             top: 50px;
             left: 50px;
