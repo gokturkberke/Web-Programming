@@ -32,8 +32,13 @@
                 </a>
             </div>
 
-            <div id="nav-links">
+            <div id="nav-links" class="responsive">
                 <ul>
+                    <li class="nav-item text-uppercase nav-icon">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </li>
                     <li class="nav-item text-uppercase">
                         <a href="#" class="nav-link">
                             Portfolio
@@ -174,7 +179,9 @@
     </section>
 
     <section id="about">
-        <h2 class="text-uppercase">
+        <h2 class="text-uppercase">.col {
+            width: 50%;
+            }
             About
         </h2>
         <hr class="star-light">
@@ -198,7 +205,7 @@
 
         </div>
 
-        <button class="btn btn-outline">
+        <button class="btn btn-outline btn-large">
             <i class="fa-solid fa-folder"></i>
             Download now!
         </button>
@@ -240,6 +247,75 @@
 
         </div>
     </section>
+
+    <footer>
+        <div class="container clearfix">
+
+            <div class="col">
+                <h4 class="text-uppercase">
+                    Location
+                </h4>
+                <p>
+                    Dikilitas Mah. Yenidogan Sk. Istanbul/Besiktas 34349
+                </p>
+            </div>
+
+            <div class="col">
+                <h4 class="text-uppercase">
+                    Around The Web
+                </h4>
+                <ul>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fa-brands fa-facebook"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fa-brands fa-dribbble"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="text-uppercase">
+                    About Freelancer
+                </h4>
+                <p>
+                    Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+            <small>Copyright @ Your Website 2025</small>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+
+        $(".nav-icon").click(function () {
+            $("#nav-links").toggleClass("responsive");
+            return false;
+
+        });
+
+    </script>
 
 
 </body>
