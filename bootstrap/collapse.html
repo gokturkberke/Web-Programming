@@ -9,6 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <!-- Butona tikladigimizda yazinin gelmesi ozelligi -->
+
 <body class="w-75 mx-auto my-4">
 
     <p>
@@ -24,7 +25,7 @@
     </div>
 
     <button type="button" class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#2">Read More...</button>
-<!-- collapse show ile default ozelligi acik yani yazilar otomatik acik oalrak gozukur -->
+    <!-- collapse show ile default ozelligi acik yani yazilar otomatik acik oalrak gozukur -->
     <div id="2" class="collapse show">
 
         <h2>Lorem ipsum dolor sit.</h2>
@@ -33,10 +34,39 @@
 
     </div>
 
-<!-- ---------------------------------------------------------------------------- -->
-<!-- Accordion Yapi -->
+    <!-- ---------------------------------------------------------------------------- -->
+    <!-- Accordion Yapi -->
     <div id="accordion">
-        
+
+        <div class="card-header">
+
+            <a href="#collapseOne" class="card-link" data-bs-toggle="collapse">Item 1</a>
+
+
+        </div>
+    </div>
+
+    <div id="collapseOne" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ex voluptatum provident, id ipsum
+                possimus et eos animi quos optio suscipit voluptate impedit sapiente quas, deleniti delectus eveniet.
+                Amet, pariatur.</p>
+        </div>
+    </div>
+        <div class="card-header" style="background-color: lightcoral;">
+
+            <a href="#collapseTwo" class="card-link" data-bs-toggle="collapse">Item 2</a>
+
+
+        </div>
+    </div>
+
+    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ex voluptatum provident, id ipsum
+                possimus et eos animi quos optio suscipit voluptate impedit sapiente quas, deleniti delectus eveniet.
+                Amet, pariatur.</p>
+        </div>
     </div>
 
 
