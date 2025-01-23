@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse-Accordion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<!-- Butona tikladigimizda yazinin gelmesi ozelligi -->
+<body class="w-75 mx-auto my-4">
+
+    <p>
+        <a href="#content" class="btn btn-primary" data-bs-toggle="collapse">Read More</a>
+    </p>
+
+    <div id="content" class="collapse">
+
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quod aspernatur ut quas ex pariatur, non
+            adipisci voluptatibus numquam nihil harum laborum aut sint vero? Ab hic dignissimos vero ratione.</p>
+
+    </div>
+
+    <button type="button" class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#2">Read More...</button>
+<!-- collapse show ile default ozelligi acik yani yazilar otomatik acik oalrak gozukur -->
+    <div id="2" class="collapse show">
+
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quod aspernatur ut quas ex pariatur, non
+            adipisci voluptatibus numquam nihil harum laborum aut sint vero? Ab hic dignissimos vero ratione.</p>
+
+    </div>
+
+<!-- ---------------------------------------------------------------------------- -->
+<!-- Accordion Yapi -->
+    <div id="accordion">
+        
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
