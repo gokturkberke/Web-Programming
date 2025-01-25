@@ -189,7 +189,32 @@ val = hobbies.split(","); // array doner
 //Arrays
 let names = ["Berke", "Kerem", "Asli", "Mert", "Arda"];
 let years = [1999, 2000, 2001, 2002, 2003];
-let mix = ["Berke " , "Korkut" , 2003 , null , undefined , ["muzik", "kitap"]];
+let mix = ["Berke ", "Korkut", 2003, null, undefined, ["muzik", "kitap"]];
 
 
 console.log(typeof names); // object
+console.log(names[0]); // Berke
+names[names.length] = "Mehmet"; // sona eleman ekler
+
+//add item
+names.push("Ali"); // sona ekler
+console.log(names); // Berke, Kerem, Asli, Mert, Arda, Mehmet, Ali
+names.unshift("Eda"); // basa ekler
+
+//remove item
+years.pop(); // son elemani siler
+years.shift(); // ilk elemani siler
+
+//index of
+console.log(names.indexOf("Asli")); // 2
+
+names.reverse(); // ters cevirir
+names.sort(); // alfabetik siralar
+years.sort(); // kucukten buyuge siralar 
+
+let veriii = names.concat(years); // iki arrayi birlestirir
+console.log(veriii); // Berke, Kerem, Asli, Mert, Arda, Mehmet, Ali, 1999, 2000, 2001, 2002
+
+names.splice(2,0,"ahmet"); // 2. indexten itibaren 0 eleman siler ve ahmet ekler
+names.splice(2,2,"ayse"); // 2. indexten itibaren 2 elemani siler ve ayse ekler
+//------------------------------------------------------
