@@ -46,35 +46,79 @@ document.querySelector("li").classList.add("active"); //ilk li elementine active
 //-------------------------------------
 //Coklu element secimi
 //documemnt.getElementByClassName()
-let veri;
+let verii;
 
-veri = document.getElementsByClassName("list-group-item");
+verii = document.getElementsByClassName("list-group-item");
 
 //veri = document.getElementsByClassName("list-group-item")[0]; //ilk elemani alir
 
 //veri = veri[2]; //3. elemani alir kisa yoldan cagirdik
 
-veri[1].style.fontSize = "30px";
-veri[1].style.color = "red";
-veri[2].textContent = "new Text"; //3. elemanin textini degistirdik
+verii[1].style.fontSize = "30px";
+verii[1].style.color = "red";
+verii[2].textContent = "new Text"; //3. elemanin textini degistirdik
 
-for (let i = 0; i < veri.length; i++) {
-    console.log(veri[i].stykle.color = "orange");
-    console.log(veri[i].textContent = "new text");
+for (let i = 0; i < verii.length; i++) {
+    console.log(verii[i].style.color = "orange");
+    console.log(verii[i].textContent = "new text");
 } //for dongusu ile tum elemanlara eristik ve hepsinin ozelligini degistrdik
 
 //document.getElementsByTagNam()
 
-veri = document.getElementsByTagName("li");
-veri = document.getElementsByTagName("a");
+verii = document.getElementsByTagName("li");
+verii = document.getElementsByTagName("a");
 
-veri = document.getElementById("task-list").getElementsByTagName("a"); //task-list id li elementin icindeki a elementlerini aldik
+verii = document.getElementById("task-list").getElementsByTagName("a"); //task-list id li elementin icindeki a elementlerini aldik
 
 //document.querySelectorAll()
 
-veri = document.querySelectorAll("li");
-veri.forEach(function (item, index) {
+verii = document.querySelectorAll("li");
+verii.forEach(function (item, index) {
     item.textContent = `${index} -item`;
 });
 
-console.log(veri)
+console.log(verii)
+console.clear();
+//-------------------------------------
+//Elementler uzerinde gezinme
+
+let value;
+const todoList = document.querySelector(".list-group");
+const todo = document.querySelector(".list-group-item:nth-child(2)"); // sadece ikinci eleman
+const card = document.querySelector(".card");
+
+
+value = todoList;
+value = todo;
+value = card;
+
+//Child Nodes
+value = todoList.childNodes; //text dahil tum childlari alir
+value = todoList.children; //sadece elementleri alir
+value = todoList.children[0]; //ilk elemani alir
+value = todoList.children[todoList.children.length - 1]; //son elemani alir
+value = todoList.children[1].textContent= "degistirilen madde"; //2. elemani degistirdik
+
+value = card;
+value = card.children; //card-header card-body
+value = card.children[1].children[0].textContent = "merhaba"; //card-body nin ilk cocugunun ilk cocugunun textini degistirdik
+
+value = todoList;
+//value = todoList.children[0];
+value = todoList.firstChild;  //ustteki veya bu ayni gorevi gorur
+value = todoList.lastChild;
+
+value = todoList.children.length; //4
+value = todoList.childElementCount; //4 ayni ustteki ile
+
+value = card;
+value = card.parentElement; //cardin parentini alir yani container-p3
+value = card.parentElement.parentElement; //parentin parenti(body olur)
+
+value = todo;
+//nextSibling - nextElementSibling
+value = todo.previousElementSibling; //bir onceki elementi alir
+value = todo.nextElementSibling; //bir sonraki elementi alir
+value = todo.nextElementSibling.nextElementSibling; // 4. elemana ulasir
+
+console.log(value); 
