@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- cdnjs den referans ettik -->
+</head>
+
+<body>
+    <a href="#">Link1</a>
+    <h3>Kurslarim</h3>
+    <ul id="liste">
+        <li class="item1">Sifirdan ileri duzey web gelistirme</li>
+        <li>Sifirdan uzman serisine programlama <a href="#">Link2</a></li>
+        <li>Android ve Ios mobil uygulama gelistirme</li>
+    </ul>
+
+
+
+    <script>
+        //(normalde javascriptte document.getElementById("liste") seklinde yazmamiz gerekiyordu)
+        //bize jquery rahat secme sansi taniyo
+
+        //Secme islemleri
+        console.log($("liste"));
+
+        console.log($("h3")); //h3 etiketini secme
+
+        console.log($("ul"));
+
+        console.log($("li")); //li etiketlerini secme
+
+        console.log($(".item1")); //class ismi item1 olan etiketi secme
+
+        console.log($("li a")); //li etiketlerinin icindeki a etiketlerini secme
+        console.log($("#liste a")); //ayni a farkli sekilde sectik
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- cdnjs den referans ettik -->
+</head>
+
+<body>
+    <a href="#">Link1</a>
+    <h3 id="header">Kurslarim</h3>
+    <ul id="liste">
+        <li class="item1">Sifirdan ileri duzey web gelistirme</li>
+        <li>Sifirdan uzman serisine programlama <a href="#">Link2</a></li>
+        <li>Android ve Ios mobil uygulama gelistirme</li>
+    </ul>
+
+
+
+    <script>
+
+        //document.getElementById("header").style.color = "blue";
+        $("#header").css("color","orange"); //jquery ile yapilan sekli
+
+        $("#liste a").css("text-decoration","none"); //liste icindeki a etiketlerinin alt cizgilerini kaldirdik
+
+        $("a").css("text-decoration","none"); //tum a etiketlerinin alt cizgilerini kaldirdik
+
+        var styles = {
+            color : "aquamarine",
+            fontSize : "20px",
+            border : "1px solid gray",
+    
+        }
+        $("ul li").css(styles); //liste icindeki li etiketlerine styles objesindeki ozellikleri uyguladik
+
+        //jvsciprt ile yapilan sekli
+        var listeler = document.querySelectorAll("li");
+
+        for(var i=0;i<listeler.length;i++){
+            listeler[i].style.color = "red";
+            listeler[i].style.fontSize = "20px";
+            listeler[i].style.border = "1px solid gray";
+        }
+        
+        //Obje olusturmadan css icinde de yapabiliriz
+        $("a").css({
+            color : "green",
+            fontSize : "16px",
+            border : "2px solid brown",
+        })
+        
+    </script>
+</body>
+
+</html>

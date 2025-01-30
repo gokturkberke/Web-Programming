@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <style>
+        .highlight {
+            background-color: gray;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+    </style>
+    <!-- cdnjs den referans ettik -->
+</head>
+
+<body>
+    <a href="#">Link1</a>
+    <h3 id="header">Kurslarim</h3>
+    <ul id="liste">
+        <li class="item1">Sifirdan ileri duzey web gelistirme</li>
+        <li>Sifirdan uzman serisine programlama <a href="#">Link2</a></li>
+        <li>Android ve Ios mobil uygulama gelistirme</li>
+    </ul>
+
+    <img src="cake.png" width="200">
+
+    <input id="ad" type="text" placeholder="Adiniz">
+    <input id="soyad" type="text" placeholder="Soyadiniz">
+    <button id="btnKayitOl" onclick="kayitOl();"></button>
+
+
+
+    <script>
+
+        console.log($("h3").text()); //Kurslarim
+        console.log($("ul li").text()); //Sifirdan ileri duzey web gelistirme Sifirdan uzman serisine programlama Link2 Android ve Ios mobil uygulama gelistirme
+
+        $("h3").text("Udemy Kurslarim"); //h3 etiketinin textini degistirdik
+
+        function kayitOl() {
+            var ad = $("#ad").val(); //inputun icindeki degeri aldik
+            var soyad = $("#soyad").val();
+
+            console.log(ad + "" + soyad + "" + "kursa kayit oldu");
+            $("#ad").toggleClass("highlight"); //toggle ile class ekleyip cikarabiliriz(varsa siler yoksa ekler)
+            $("#soyad").addClass("orange"); //inputa metinine orange classini ekledik
+
+            //removeClass ile class silme islemi yapabiliriz    
+
+        }
+
+        $("img").attr("width","350"); //img etiketinin widthini degistirdik
+
+    </script>
+</body>
+
+</html>
