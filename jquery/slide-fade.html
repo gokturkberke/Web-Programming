@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+
+<body>
+
+    <div>
+
+        <p>Sifirdan ileri duzey web gelistirme</p>
+        <img src="cake.png" width="150px">
+    </div>
+    <br><br>
+    <button id="slideup">Slide up</button>
+    <button id="slide down">Slide Down</button>
+    <button id="Toggle">Toggle</button>
+    <br><br>
+    <button id="fadein">Fade in</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadeto">Fade To</button>
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("#slideup").click(function () {
+                $("div").slideUp(3000, function () { //yukari kaydirir
+                    alert("div gizlendi");
+                });
+            });
+
+            $("#slidedown").click(function () {
+                $("div").slideDown(2000, function () {
+                    alert("div gosterildi");
+                });
+            });
+
+            $("#toggle").click(function () {
+                $("div").slideToggle(2000, function () {
+                    alert("div gizlendi ve gosterildi");
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            $("#fadein").click(function () {
+                $("div").fadeIn("slow");
+            });
+
+
+            $("#fadeout").click(function () {
+                $("div").fadeOut(2000)
+
+            });
+
+            $("#fadeto").click(function () {
+                $("div").fadeTo("slow", 0.5); //slow ve opacity 0.5 olarak ayarladik
+            });
+            $("#toggle2").click(function(){
+                $("div").fadeToggle("slow");
+            });
+        });
+
+
+
+
+
+    </script>
+</body>
+
+</html>
