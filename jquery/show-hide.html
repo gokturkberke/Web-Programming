@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+
+<body>
+
+    <p>Sifirdan ileri duzey web gelistirme</p>
+
+    <button id="hide">Hide</button>
+
+    <button id="show">Show</button>
+
+    <button id="toggle">Toggle</button>
+
+    
+    <script>
+
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide("slow"); //p etiketini gizler(yavas sekilde)
+            });
+
+            $("#show").click(function(){
+            $("p").show(4000,function(){
+                alert("p etiketi gosterildi"); //calisip bittikten sonra alert gosterir
+            }); //p etiketini gosterir(4 saniye surede)
+            })
+
+            $("#toggle").click(function(){
+                $("p").toggle("fast"); //p etiketini gizler ve gosterir hizli sekilde
+            }) 
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>
