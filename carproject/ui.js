@@ -32,25 +32,52 @@ UI.prototype.addCarToUI = function (newCar) {
 
 }
 
-UI.prototype.clearInputs = function (element1,element2,element3) {
+UI.prototype.clearInputs = function (element1, element2, element3) {
     element1.value = "";
     element2.value = "";
     element3.value = "";
 } //Inputlari temizleme
 
-UI.prototype.displayMessages = function(message,type){
+UI.prototype.displayMessages = function (message, type) {
     const cardBody = document.querySelector(".card-body");
 
     //Alert divi olusturma
     const div = document.createElement("div");
 
 
-    div.className =`alert alert-${type}`;
+    div.className = `alert alert-${type}`;
     div.textContent = message;
 
     cardBody.appendChild(div);
 
-    setTimeout( function(){
+    setTimeout(function () {
         div.remove();
-    },2000); //2 saniye sonra silinmesi icin
+    }, 2000); //2 saniye sonra silinmesi icin
+}
+
+UI.prototype.loadAllCars = function (cars) {
+    const carList = document.getElementById("cars");
+
+    cars.forEach(function (car) {
+        carList.innerHTML += ` <tr>
+            <td><img src="${car.url}" class="img-fluid img-thumbnail"></td>
+            <td>${car.title}</td>
+            <td>${car.price}</td>
+            <td><a href="#" id = "delete-car" class = "btn btn-danger">Aracı Sil</a></td>
+        </tr>
+        `
+
+    });
+}
+
+UI.prototype.deleteCarFromUI = function(element){
+    element.parentElement.parentElement.remove();
+}
+
+UI.prototype.clearAllCarsFromUi = function(){
+    const carList = document.getElementById("cars");
+
+    while(carList.firstElementChild !== null){
+        carList.firstElementChild.remove(); //Child oldugu surece sil
+    }
 }
